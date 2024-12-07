@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    text-align: center;
+}
+
+h3 {
+    text-decoration: underline;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+div {
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    margin: 0em;
+}
+
+.box {
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.01em solid black;
+    background: white;
+    width: 2em;
+    height: 2em;
+}
+
+.grid3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    width: 6em;
+    margin: 0em;
+}
+
+.triangles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    width: 6em;
+    height: 5.85em;
+    background: transparent;
+    z-index: 2;
+}
+
+.winningTile {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 2.95em solid gold;
+    border-left: 2.95em solid skyblue;
+    border-right: 2.95em solid limegreen;
+    border-top: 2.95em solid crimson;
+    z-index: -1;
+}
+
+.part {
+    display: inline-block;
+    border: 0.01em solid black;
+}
+
+/* .board-top {
+    padding-top: 1em;
+}
+
+.board-bottom {
+    padding-bottom: 1em;
+} */
+
+.board-top, .board-middle, .board-bottom {
+    /* background-color: rgb(192, 190, 192); */
+    display: flex;
+    justify-content: center;
+}
+
+.base {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5em;
+    border: 0.06em solid black;
+    width: 11em;
+    height: 11em;
+    border-radius: 50%;
+}
+
+.board {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5%;
+    height: auto;
+}
+
+.token-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border: 0.06em solid black;
+    width: 2.5em;
+    height: 2.5em;
+    background: white;
+    border-radius: 50%
+}
+
+.blue-home, .blue-box, .blue-token {
+    background: skyblue;
+}
+
+.red-home, .red-box, .red-token {
+    background: crimson;
+}
+
+.yellow-home, .yellow-box, .yellow-token {
+    background: gold;
+}
+
+.green-home, .green-box, .green-token {
+    background: limegreen;
+}
+
+.token {
+    position: absolute;
+    box-shadow: .1em .1em rgb(105, 101, 101);
+    margin: 0em;
+    border: 0.2em outset rgb(119, 115, 115);
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+#roll {
+    display: none;
+}
+
+#reset {
+    display: none;
+}
+
+.piecesInPlay {
+    border: 0.2em outset #f06292;
+    background: #ba68c8;
+    width: 1.7em;
+    height: 1.7em;
+    z-index: 3;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+button {
+    margin-bottom: 1em;
+}
+
+/* User score, roll and messages */
+
+#message {
+    display: block;
+}
+
+.rollDisplay {
+    border: 1px solid black;
+    border-radius: 20%;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.win {
+    width: 1.3em;
+    height: 1.3em;
+    position: relative;
+    margin: 0em 0.4em 0em 0em;
+}
+
+.score {
+    display: flex;
+}
+
+.scoreSheet {
+    border-radius: 5%;
+    padding: 1em;
+    border: 1px solid black;
+}
+
+#scoreHead {
+    font-size: 1.5em;
+}
+
+#player1, #player2, #player3, #player4 {
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+#player1:hover {
+    color: skyblue;
+}
+
+#player2:hover {
+    color: crimson;
+}
+
+#player3:hover {
+    color: limegreen;
+}
+
+#player4:hover {
+    color: gold;
+}
+
+.userStats {
+    display: inline-block;
+    vertical-align: top;
+}
+
+p {
+    font-size: 2em;
+    margin: 0em;
+}
+
+#updateRoll {
+    font-size: 1.5em;
+}
+.boardWrapper {
+    margin: 2em auto;
+    border: 3px solid black;
+    width: 30.4em;
+    height: 30.5em;
+    background-color: black;
+}

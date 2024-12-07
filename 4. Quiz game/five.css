@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #d0c4c4;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.welcome-container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 100px auto;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #a4eff1;
+}
+
+.welcome-container h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.welcome-container p {
+    font-size: 1.25em;
+    color: #555;
+    margin: 15px 0;
+}
+
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: rgb(47, 8, 73);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: rgb(34, 6, 53);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .welcome-container {
+        width: 95%;
+        margin: 50px auto; 
+    }
+
+    .columns {
+        flex-direction: column; 
+        gap: 20px; 
+    }
+
+    .column {
+        min-width: 100%; 
+        max-width: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .welcome-container {
+        padding: 10px;
+    }
+
+    .welcome-container h1 {
+        font-size: 2em;
+    }
+
+    .welcome-container p {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+}

@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="auth-container">
+        <h1>Signup or Login for the Quiz</h1>
+
+        <div id="signup-container" class="auth-box">
+            <h2>Sign Up</h2>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="text" id="signup-name" placeholder="Name" required>
+            <input type="text" id="signup-mobile" placeholder="Mobile Number" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button id="signup-button">Sign Up</button>
+            <div id="signup-message" class="auth-message"></div>
+        </div>
+
+        <div id="login-container" class="auth-box" style="display:none;">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button id="login-button">Login</button>
+            <div id="login-message" class="auth-message"></div>
+        </div>
+
+        <div id="forgot-password-container" class="auth-box" style="display:none;">
+            <h2>Forgot Password</h2>
+            <input type="text" id="forgot-mobile" placeholder="Enter Mobile Number" required>
+            <button id="send-otp-button">Send OTP</button>
+            <div id="otp-message" class="auth-message"></div>
+            <div id="otp-section" style="display:none;">
+                <input type="text" id="otp" placeholder="Enter OTP" required>
+                <input type="password" id="new-password" placeholder="New Password" required>
+                <button id="reset-password-button">Reset Password</button>
+                <div id="reset-message" class="auth-message"></div>
+            </div>
+        </div>
+
+        <button id="toggle-auth">Already have an account? Login</button>
+        <button id="forgot-password-toggle" style="display:none;">Forgot Password</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
